@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6572ECCF255536A3002EBCE3 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6572ECCE255536A3002EBCE3 /* CollectionViewCell.xib */; };
 		859018AA1F9A24F20082A433 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859018A91F9A24F20082A433 /* TableViewCell.swift */; };
 		85C088321F9A0532007F328C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C088311F9A0532007F328C /* AppDelegate.swift */; };
 		85C088341F9A0532007F328C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C088331F9A0532007F328C /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6572ECCE255536A3002EBCE3 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		859018A91F9A24F20082A433 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		85C0882E1F9A0532007F328C /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C088311F9A0532007F328C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				859018A91F9A24F20082A433 /* TableViewCell.swift */,
 				85C088431F9A073C007F328C /* CollectionViewCell.swift */,
+				6572ECCE255536A3002EBCE3 /* CollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				85C0883C1F9A0532007F328C /* LaunchScreen.storyboard in Resources */,
 				85C088391F9A0532007F328C /* Assets.xcassets in Resources */,
+				6572ECCF255536A3002EBCE3 /* CollectionViewCell.xib in Resources */,
 				85C088371F9A0532007F328C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,11 +321,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FFJ5JGY6C5;
 				INFOPLIST_FILE = CollectionView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ankit.CollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -333,11 +337,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FFJ5JGY6C5;
 				INFOPLIST_FILE = CollectionView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ankit.CollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="collectionCell" id="Dwv-yV-qEf" customClass="CollectionViewCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="510"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YCM-0F-AFd">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="510"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-19-TUj">
+                        <rect key="frame" x="0.0" y="0.0" width="471" height="510"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-tB-Kfy">
+                                <rect key="frame" x="0.0" y="0.0" width="471" height="104.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nationalRail" translatesAutoresizingMaskIntoConstraints="NO" id="erw-oo-Y4L">
+                                        <rect key="frame" x="16" y="16" width="19" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="CMn-1e-gl8"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="19" id="LCN-km-rY7"/>
+                                            <constraint firstAttribute="height" constant="12" id="X9w-TL-Pxo"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="tuu-Fx-vUB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-W2-PtW">
+                                        <rect key="frame" x="51" y="16" width="32" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBf-KF-9wG">
+                                        <rect key="frame" x="16" y="72" width="34" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tOi-W2-PtW" firstAttribute="leading" secondItem="erw-oo-Y4L" secondAttribute="trailing" constant="16" id="5Xq-mF-X27"/>
+                                    <constraint firstItem="erw-oo-Y4L" firstAttribute="leading" secondItem="ejX-tB-Kfy" secondAttribute="leading" constant="16" id="6od-dU-8iT"/>
+                                    <constraint firstItem="BBf-KF-9wG" firstAttribute="top" secondItem="erw-oo-Y4L" secondAttribute="bottom" constant="44" id="YP5-Xg-qSZ"/>
+                                    <constraint firstItem="tOi-W2-PtW" firstAttribute="top" secondItem="ejX-tB-Kfy" secondAttribute="top" constant="16" id="bdP-In-h1O"/>
+                                    <constraint firstAttribute="bottom" secondItem="BBf-KF-9wG" secondAttribute="bottom" constant="16" id="bqW-rw-HdG"/>
+                                    <constraint firstItem="erw-oo-Y4L" firstAttribute="top" secondItem="ejX-tB-Kfy" secondAttribute="top" constant="16" id="jfD-rD-O4Z"/>
+                                    <constraint firstItem="BBf-KF-9wG" firstAttribute="leading" secondItem="ejX-tB-Kfy" secondAttribute="leading" constant="16" id="s8C-dg-UCf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ref-fY-Vz2">
+                                <rect key="frame" x="0.0" y="104.5" width="471" height="60.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nationalRail" translatesAutoresizingMaskIntoConstraints="NO" id="dpc-4x-cgE">
+                                        <rect key="frame" x="16" y="16" width="19" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="19" id="HRj-IV-5jt"/>
+                                            <constraint firstAttribute="height" constant="12" id="Heo-pS-pWr"/>
+                                            <constraint firstAttribute="width" constant="19" id="mBo-wQ-SyC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="nh3-g2-LMp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Helloline3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Men-ZR-TQf">
+                                        <rect key="frame" x="51" y="16" width="61.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helloline4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQu-P6-Cgy">
+                                        <rect key="frame" x="16" y="28" width="61.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gQu-P6-Cgy" firstAttribute="leading" secondItem="ref-fY-Vz2" secondAttribute="leading" constant="16" id="1jb-eB-HiJ"/>
+                                    <constraint firstItem="dpc-4x-cgE" firstAttribute="leading" secondItem="ref-fY-Vz2" secondAttribute="leading" constant="16" id="1sI-wj-12M"/>
+                                    <constraint firstItem="Men-ZR-TQf" firstAttribute="leading" secondItem="dpc-4x-cgE" secondAttribute="trailing" constant="16" id="8bv-gK-vwA"/>
+                                    <constraint firstItem="gQu-P6-Cgy" firstAttribute="top" secondItem="dpc-4x-cgE" secondAttribute="bottom" id="Ggq-BB-WRE"/>
+                                    <constraint firstAttribute="bottom" secondItem="gQu-P6-Cgy" secondAttribute="bottom" constant="16" id="Io8-sK-5h4"/>
+                                    <constraint firstItem="Men-ZR-TQf" firstAttribute="top" secondItem="ref-fY-Vz2" secondAttribute="top" constant="16" id="ItV-O2-4hM"/>
+                                    <constraint firstItem="dpc-4x-cgE" firstAttribute="top" secondItem="ref-fY-Vz2" secondAttribute="top" constant="16" id="Yft-aH-To4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ref-fY-Vz2" firstAttribute="leading" secondItem="Sjb-19-TUj" secondAttribute="leading" id="0wz-5G-K5G"/>
+                            <constraint firstAttribute="trailing" secondItem="ref-fY-Vz2" secondAttribute="trailing" id="871-wb-Ao0"/>
+                            <constraint firstAttribute="trailing" secondItem="ref-fY-Vz2" secondAttribute="trailing" id="C5a-ZA-Ljm"/>
+                            <constraint firstItem="ref-fY-Vz2" firstAttribute="leading" secondItem="Sjb-19-TUj" secondAttribute="leading" id="ERa-Tk-xsB"/>
+                            <constraint firstItem="ejX-tB-Kfy" firstAttribute="top" secondItem="Sjb-19-TUj" secondAttribute="top" id="KcH-x4-s7p"/>
+                            <constraint firstItem="ref-fY-Vz2" firstAttribute="top" secondItem="ejX-tB-Kfy" secondAttribute="bottom" id="dAm-oI-12K"/>
+                            <constraint firstItem="ref-fY-Vz2" firstAttribute="top" secondItem="ejX-tB-Kfy" secondAttribute="bottom" id="lg5-0A-Q3w"/>
+                            <constraint firstAttribute="trailing" secondItem="ejX-tB-Kfy" secondAttribute="trailing" id="r4u-JE-60Y"/>
+                            <constraint firstItem="ejX-tB-Kfy" firstAttribute="leading" secondItem="Sjb-19-TUj" secondAttribute="leading" id="tf7-YZ-8Il"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Sjb-19-TUj" secondAttribute="bottom" id="THa-Kv-6Ch"/>
+                    <constraint firstItem="Sjb-19-TUj" firstAttribute="top" secondItem="YCM-0F-AFd" secondAttribute="top" id="Vev-B5-1do"/>
+                    <constraint firstItem="Sjb-19-TUj" firstAttribute="leading" secondItem="YCM-0F-AFd" secondAttribute="leading" id="dPe-Ub-ayy"/>
+                    <constraint firstAttribute="trailing" secondItem="Sjb-19-TUj" secondAttribute="trailing" id="rca-bd-0MR"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="471" height="510"/>
+            <point key="canvasLocation" x="421.01449275362324" y="229.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nationalRail" width="27" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
